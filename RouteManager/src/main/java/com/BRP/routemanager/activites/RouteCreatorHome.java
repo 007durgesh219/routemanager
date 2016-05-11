@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.LayoutInflater;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
@@ -21,6 +22,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.BRP.routemanager.events.LocationChangedEvent;
+import com.BRP.routemanager.models.Stop;
 import com.BRP.routemanager.utils.CommonUtils;
 import com.BRP.routemanager.utils.Constants;
 import com.BRP.routemanager.utils.DbHelper;
@@ -46,6 +48,7 @@ public class RouteCreatorHome extends FragmentActivity
 
     public static String Route, City, Corp;
     private ArrayList<String> spinnerText, corpSpinText;
+    private ArrayList<Stop> stops;
 
     private GoogleMap mMap;
 
@@ -56,7 +59,7 @@ public class RouteCreatorHome extends FragmentActivity
 
     private EditText route, city, corp, dest, src;
     private Spinner spinner, corpSpinner;
-    private TextView cityLabel, corpLabel;
+    private TextView cityLabel, corpLabel, latituteTxt, longituteTxt;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,10 +69,13 @@ public class RouteCreatorHome extends FragmentActivity
         route = (EditText) findViewById(R.id.route_no);
         city = (EditText) findViewById(R.id.addCity);
         corp = (EditText) findViewById(R.id.addCorp);
-        src = (EditText) findViewById(R.id.src);
-        dest = (EditText) findViewById(R.id.dest);
+        /*src = (EditText) findViewById(R.id.src);
+        dest = (EditText) findViewById(R.id.dest);*/
         cityLabel = (TextView) findViewById(R.id.addCityLabel);
         corpLabel = (TextView) findViewById(R.id.addCorpLabel);
+        latituteTxt = (TextView)findViewById(R.id.latitute_txt);
+        longituteTxt = (TextView)findViewById(R.id.longitute_txt);
+        stops = new ArrayList<>();
 
         if (savedInstanceState != null) {
             route.setText(savedInstanceState.getString(ROUTE));
@@ -77,13 +83,14 @@ public class RouteCreatorHome extends FragmentActivity
             corp.setText(savedInstanceState.getString("CORP"));
             src.setText(savedInstanceState.getString("SRC"));
             dest.setText(savedInstanceState.getString("DEST"));
+            stops = (ArrayList<Stop>)savedInstanceState.getSerializable("STOPS");
             spinnerText = savedInstanceState.getStringArrayList(SPINTEXT);
         } else {
             route.setText("");
             city.setText("");
             corp.setText("");
-            src.setText("");
-            dest.setText("");
+//            src.setText("");
+//            dest.setText("");
 
             File dir = new File(DbHelper.DATABASE_PATH);
             dir.mkdirs();
@@ -188,6 +195,8 @@ public class RouteCreatorHome extends FragmentActivity
             public void run() {
                 mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(location,
                         Constants.ZOOM));
+                latituteTxt.setText(location.latitude+"");
+                longituteTxt.setText(location.longitude+"");
             }
         });
     }
@@ -261,7 +270,7 @@ public class RouteCreatorHome extends FragmentActivity
 
         corpSpinText.add(getString(R.string.newCorp));
 
-        if (position > 1) {
+        /*if (position > 1) {
             File dir = new File(DbHelper.DATABASE_PATH);
             dir.mkdirs();
             File files[] = dir.listFiles();
@@ -281,7 +290,7 @@ public class RouteCreatorHome extends FragmentActivity
                     corpSpinText.add(name.substring(name.indexOf("_Corp_") + 6).replaceAll("_", " "));
                 }
             }
-        }
+        }*/
 
         ArrayAdapter<String> corpAdapter = new ArrayAdapter<String>(RouteCreatorHome.this, android.R.layout.simple_spinner_item, corpSpinText);
         corpAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -328,8 +337,8 @@ public class RouteCreatorHome extends FragmentActivity
         super.onSaveInstanceState(outState);
         outState.putString(ROUTE, route.getText().toString());
         outState.putString("CITY", city.getText().toString());
-        outState.putString("SRC", src.getText().toString());
-        outState.putString("DEST", dest.getText().toString());
+        //outState.putString("SRC", src.getText().toString());
+        //outState.putString("DEST", dest.getText().toString());
         outState.putStringArrayList(SPINTEXT, spinnerText);
     }
 
@@ -340,9 +349,22 @@ public class RouteCreatorHome extends FragmentActivity
         route.setText("");
         city.setText("");
         corp.setText("");
-        src.setText("");
-        dest.setText("");
+        //src.setText("");
+        //dest.setText("");
         spinner.setSelection(0);
+    }
+
+    public void getLocation(View view) {
+        if (LocationUtil.checkLocationPermission() && LocationUtil.isGPSOn()) {
+            rmApp.getLocationUtil().startLocationUpdates();
+            setupMapIfRequired();
+        } else if (!LocationUtil.checkLocationPermission()){
+            rmApp.getLocationUtil().askLocationPermission(this);
+        } else {
+            rmApp.getLocationUtil().checkLocationSettings(this);
+            setupMapIfRequired();
+        }
+        CommonUtils.toast("Getting your location. Please wait...");
     }
 
     public void reset(View view) {
@@ -350,11 +372,15 @@ public class RouteCreatorHome extends FragmentActivity
     }
 
     public void create(View view) {
-        Route = "Route_" + route.getText().toString().trim() + "_From_" + src.getText().toString().trim() + "_Towards_" + dest.getText().toString().trim();
-
+        //Route = "Route_" + route.getText().toString().trim() + "_From_" + src.getText().toString().trim() + "_Towards_" + dest.getText().toString().trim();
+        Route = route.getText().toString().trim();
         if (valid()) {
-            City = City + "_Corp_" + Corp;
-            RVnC();
+            //City = City + "_Corp_" + Corp;
+            //RVnC();
+            findViewById(R.id.route_info_layout).setVisibility(View.GONE);
+            findViewById(R.id.add_stop).setVisibility(View.VISIBLE);
+            findViewById(R.id.create_route).setVisibility(View.GONE);
+            findViewById(R.id.reset_form).setVisibility(View.GONE);
         }
     }
 
@@ -395,7 +421,7 @@ public class RouteCreatorHome extends FragmentActivity
         }
 
 
-        if (src.getText().toString().trim().length() == 0) {
+        /*if (src.getText().toString().trim().length() == 0) {
             Toast.makeText(this, getString(R.string.srcEmpty), Toast.LENGTH_SHORT).show();
             return false;
         }
@@ -403,9 +429,9 @@ public class RouteCreatorHome extends FragmentActivity
         if (dest.getText().toString().trim().length() == 0) {
             Toast.makeText(this, getString(R.string.destEmpty), Toast.LENGTH_SHORT).show();
             return false;
-        }
+        }*/
 
-        Route = Route.trim().replaceAll(" ", "_");
+        /*Route = Route.trim().replaceAll(" ", "_");
         City = City.trim().replaceAll(" ", "_");
         Corp = Corp.trim().replaceAll(" ", "_");
 
@@ -461,9 +487,38 @@ public class RouteCreatorHome extends FragmentActivity
         if (Route.charAt(Route.length() - 1) == '_') {
             Toast.makeText(this, getString(R.string.destEndSplCh), Toast.LENGTH_SHORT).show();
             return false;
-        }
+        }*/
 
         return true;
+    }
+
+    private AlertDialog stopInfoDialog;
+    private int nextPos = 1;
+
+    public void addStop(View view) {
+        if (stopInfoDialog == null) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setView(R.layout.stop_info_dialog_layout);
+            stopInfoDialog = builder.create();
+            stopInfoDialog.setTitle("Enter Stop Info");
+            ((EditText)stopInfoDialog.findViewById(R.id.stop_name)).setText("");
+            ((EditText)stopInfoDialog.findViewById(R.id.stop_number)).setText(nextPos+"");
+            stopInfoDialog.setButton(DialogInterface.BUTTON_POSITIVE, "Add Stop", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    EditText name = (EditText)stopInfoDialog.findViewById(R.id.stop_name);
+                    EditText pos = (EditText)stopInfoDialog.findViewById(R.id.stop_number);
+                    stops.add(new Stop(name.getText().toString(), (pos.getText().toString()),
+                            location.latitude+"", location.longitude+""));
+                    stopInfoDialog.dismiss();
+                }
+            });
+        }
+        stopInfoDialog.show();
+    }
+
+    public void saveData(View view) {
+        finish();
     }
 
     private void RVnC() {

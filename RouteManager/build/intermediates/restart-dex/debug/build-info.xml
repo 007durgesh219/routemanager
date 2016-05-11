@@ -4,45 +4,36 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="18941963370338"
-    verifier="COMPATIBLE" >
+    timestamp="32165841982069" >
 
     <task
         name="javac"
-        duration="3021" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="2127" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="262" />
+        duration="0" />
     <task
         name="verifier"
-        duration="17" />
+        duration="0" />
 
-    <artifact
-        location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
-
-    <build timestamp="18444268808567" >
+    <build timestamp="31411042566071" >
         <artifact
             location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/outputs/apk/RouteManager-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="18850514042769" >
-        <artifact
-            location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-            type="DEX" />
+    <build timestamp="31704276067807" >
         <artifact
             location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
             type="DEX" />
     </build>
-    <build
-        timestamp="18941963370338"
-        verifier="COMPATIBLE" >
+    <build timestamp="32140434992898" >
         <artifact
-            location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
+            location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
     </build>
+    <build timestamp="32165841982069" />
 
 </instant-run>
