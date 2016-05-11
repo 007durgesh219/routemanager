@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/menu/main_activity_actions.xml",
+        "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/res/menu/main_activity_actions.xml"
+    },
+    {
+        "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/menu/menu_upload.xml",
+        "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/res/menu/menu_upload.xml"
+    }
+]

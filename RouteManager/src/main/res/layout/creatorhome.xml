@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+    
+    <TextView
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:textSize="18sp"
+	android:text="@string/selectCity" />
+ 
+    <Spinner
+	android:id="@+id/city_spinner"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:spinnerMode="dropdown" />
+
+    <TextView
+	android:id="@+id/addCityLabel"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:textSize="18sp"
+	android:text="@string/addCity" 
+	android:visibility="gone" />
+
+    <EditText
+	android:id="@+id/addCity"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:textSize="18sp"
+	android:hint="@string/addCity"
+	android:inputType="textCapWords"
+	android:visibility="gone" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:text="@string/selectCorp" />
+
+	<Spinner
+		android:id="@+id/corp_spinner"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:spinnerMode="dropdown" />
+
+	<TextView
+		android:id="@+id/addCorpLabel"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:text="@string/addCorp"
+		android:visibility="visible" />
+
+	<EditText
+		android:id="@+id/addCorp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="18sp"
+		android:hint="@string/addCorp"
+		android:inputType="textCapWords"
+		android:visibility="visible" />
+
+    <TextView
+    	android:layout_width="match_parent"
+   	android:layout_height="wrap_content"
+	android:textSize="18sp"
+    	android:text="@string/route" />
+
+    <EditText
+	android:id="@+id/route_no"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:textSize="18sp"
+	android:hint="@string/route"
+	android:inputType="textCapCharacters" />
+
+    <TextView
+    	android:layout_width="match_parent"
+   	android:layout_height="wrap_content"
+	android:textSize="18sp"
+    	android:text="@string/source" />
+
+    <EditText
+	android:id="@+id/src"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:textSize="18sp"
+	android:hint="@string/source"
+	android:inputType="textCapWords" />
+
+    <TextView
+    	android:layout_width="match_parent"
+   	android:layout_height="wrap_content"
+	android:textSize="18sp"
+    	android:text="@string/destination" />
+
+    <EditText
+	android:id="@+id/dest"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:textSize="18sp"
+	android:hint="@string/destination"
+	android:inputType="textCapWords" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+	android:layout_gravity="center_horizontal" >
+
+	<Button
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="16sp"
+	    android:text="@string/button_create"
+	    android:onClick="create" />
+
+	<Button
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="16sp"
+	    android:text="@string/button_reset"
+	    android:onClick="reset" />
+
+    </LinearLayout>
+
+	</LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="16901316236263"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="152" />
+    <task
+        name="instant-run-dex"
+        duration="660" />
+    <task
+        name="instant-run-transform"
+        duration="20" />
+    <task
+        name="verifier"
+        duration="2" />
+
+    <artifact
+        location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
+
+    <build timestamp="16531447897452" >
+        <artifact
+            location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/outputs/apk/RouteManager-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="16771632263834"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/builds/debug/16771632263834/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="16901316236263"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>
