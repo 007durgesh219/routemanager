@@ -3,6 +3,7 @@ package com.BRP.routemanager.app;
 import android.content.Context;
 import android.text.TextUtils;
 
+import com.BRP.routemanager.utils.LocationUtil;
 import com.BRP.routemanager.utils.PrefManager;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -12,6 +13,13 @@ public class rmApp extends android.app.Application {
     private static final Object TAG = rmApp.class.getSimpleName();
     private static Context mContext;
     private static RequestQueue mRequestQueue;
+    private static LocationUtil locationUtil;
+
+    public static LocationUtil getLocationUtil() {
+        if (locationUtil == null)
+            locationUtil = new LocationUtil(mContext);
+        return locationUtil;
+    }
 
     @Override
 	public void onCreate() {

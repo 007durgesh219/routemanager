@@ -131,5 +131,6 @@
         completions."
     </string>
     <string name="prompt_username">Username</string>
+    <string name="google_api_key">AIzaSyDWG1FdZv4f-4Fbvx8SqY15BoXRi9aiswU</string>
 
 </resources>

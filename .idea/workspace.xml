@@ -10,7 +10,433 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a271a862-3fb9-46db-b459-2eecd4896947" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/events/LocationChangedEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/LocationUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_RouteManager_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_RouteManager_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_RouteManager_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_RouteManager_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_RouteManager_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_RouteManager_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/android/support/v7/mediarouter/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/EditNames.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/EditNames.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/EditSavedHome.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/EditSavedHome.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/ListFiles.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/ListFiles.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$integer.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$layout.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$menu.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$raw.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$style.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$styleable.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/UploadActivity.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/UploadActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$1.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$2.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$3.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$4.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$5.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$6.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$UserLoginTask.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity$UserLoginTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteCreator$2.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteCreator$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteCreator.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteCreator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteCreatorHome$1.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteCreatorHome$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteCreatorHome$2.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteCreatorHome$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteCreatorHome$3.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteCreatorHome$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteCreatorHome.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteCreatorHome.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteManager.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/activites/RouteManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/app/rmApp.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/app/rmApp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/utils/Constants$Pref.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/utils/Constants$Pref.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/utils/Constants.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/utils/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/utils/JSONParser.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/BRP/routemanager/utils/JSONParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/ads/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/ads/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/ads/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/ads/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/analytics/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/analytics/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/analytics/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/analytics/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/appstate/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/appstate/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/appstate/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/appstate/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/auth/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/auth/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/auth/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/auth/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/base/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/base/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/base/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/base/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/cast/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/cast/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/cast/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/cast/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/drive/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/drive/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/drive/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/drive/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/fitness/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/fitness/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/fitness/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/fitness/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/games/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/games/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/games/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/games/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/gcm/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/gcm/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/gcm/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/gcm/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/identity/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/identity/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/identity/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/identity/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/location/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/location/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/location/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/location/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/maps/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/maps/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/maps/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/maps/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/measurement/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/measurement/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/measurement/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/measurement/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/nearby/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/nearby/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/nearby/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/nearby/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/panorama/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/panorama/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/panorama/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/panorama/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/plus/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/plus/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/plus/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/plus/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/vision/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/vision/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/vision/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/vision/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/wallet/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/wallet/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/wallet/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/wallet/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/wearable/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/wearable/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/wearable/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/classes/debug/com/google/android/gms/wearable/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/android/support/v7/mediarouter/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/EditNames.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/EditNames.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/EditSavedHome.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/EditSavedHome.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/ListFiles.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/ListFiles.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$integer.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$layout.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$menu.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$raw.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$style.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$styleable.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/UploadActivity.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/UploadActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$1.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$2.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$3.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$4.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$5.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$6.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$UserLoginTask.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity$UserLoginTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteCreator$2.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteCreator$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteCreator.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteCreator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteCreatorHome$1.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteCreatorHome$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteCreatorHome$2.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteCreatorHome$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteCreatorHome$3.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteCreatorHome$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteCreatorHome.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteCreatorHome.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteManager.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/activites/RouteManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/app/rmApp.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/app/rmApp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/utils/Constants$Pref.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/utils/Constants$Pref.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/utils/Constants.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/utils/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/utils/JSONParser.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/BRP/routemanager/utils/JSONParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/ads/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/ads/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/ads/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/ads/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/analytics/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/analytics/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/analytics/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/analytics/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/appinvite/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/appinvite/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/appinvite/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/appinvite/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/appstate/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/appstate/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/appstate/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/appstate/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/auth/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/auth/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/auth/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/auth/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/base/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/base/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/base/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/base/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/cast/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/cast/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/cast/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/cast/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/drive/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/drive/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/drive/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/drive/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/fitness/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/fitness/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/fitness/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/fitness/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/games/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/games/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/games/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/games/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/gcm/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/gcm/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/gcm/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/gcm/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/identity/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/identity/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/identity/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/identity/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/location/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/location/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/location/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/location/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/maps/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/maps/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/maps/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/maps/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/measurement/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/measurement/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/measurement/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/measurement/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/nearby/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/nearby/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/nearby/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/nearby/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/panorama/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/panorama/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/panorama/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/panorama/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/plus/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/plus/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/plus/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/plus/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/safetynet/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/safetynet/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/safetynet/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/safetynet/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/vision/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/vision/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/vision/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/vision/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/wallet/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/wallet/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/wallet/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/wallet/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/wearable/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/wearable/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/wearable/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental-verifier/debug/com/google/android/gms/wearable/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/instant-run-support/debug/classes.zip" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/instant-run-support/debug/classes.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/instant-run-support/debug/resources.zip" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/instant-run-support/debug/resources.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/reload-dex/debug/classes.dex" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/reload-dex/debug/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/reload-dex/debug/classes.jar" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/reload-dex/debug/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/mediarouter/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/EditNames.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/EditNames.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/EditSavedHome.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/EditSavedHome.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/ListFiles.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/ListFiles.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$integer.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$layout.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$menu.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$raw.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$style.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$styleable.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/UploadActivity.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/UploadActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$1.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$2.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$3.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$4.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$5.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$6.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$UserLoginTask.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity$UserLoginTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteCreator$2.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteCreator$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteCreator.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteCreator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteCreatorHome$1.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteCreatorHome$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteCreatorHome$2.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteCreatorHome$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteCreatorHome$3.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteCreatorHome$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteCreatorHome.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteCreatorHome.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteManager.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/activites/RouteManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/app/rmApp.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/app/rmApp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/utils/Constants$Pref.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/utils/Constants$Pref.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/utils/Constants.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/utils/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/utils/JSONParser.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/BRP/routemanager/utils/JSONParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/ads/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/ads/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/ads/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/ads/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/analytics/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/analytics/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/analytics/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/analytics/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appinvite/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appinvite/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appinvite/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appinvite/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appstate/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appstate/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appstate/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appstate/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/auth/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/auth/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/auth/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/auth/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/base/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/base/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/base/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/base/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/cast/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/cast/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/cast/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/cast/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/drive/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/drive/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/drive/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/drive/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/fitness/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/fitness/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/fitness/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/fitness/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/games/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/games/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/games/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/games/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/gcm/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/gcm/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/gcm/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/gcm/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/identity/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/identity/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/identity/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/identity/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/location/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/location/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/location/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/location/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/maps/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/maps/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/maps/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/maps/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/measurement/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/measurement/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/measurement/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/measurement/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/nearby/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/nearby/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/nearby/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/nearby/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/panorama/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/panorama/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/panorama/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/panorama/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/plus/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/plus/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/plus/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/plus/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/safetynet/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/safetynet/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/safetynet/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/safetynet/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/vision/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/vision/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/vision/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/vision/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/wallet/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/wallet/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/wallet/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/wallet/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/wearable/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/wearable/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/wearable/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/wearable/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/EditNames$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/EditNames$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/EditSavedHome$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/EditSavedHome$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/ListFiles$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/ListFiles$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/R$id$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/R$id$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/R$string$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/R$string$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/UploadActivity$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/UploadActivity$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$1$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$1$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$2$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$2$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$3$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$3$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$4$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$4$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$5$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$5$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$6$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$6$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$UserLoginTask$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$UserLoginTask$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/activites/LoginActivity$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/app/rmApp$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/app/rmApp$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/utils/Constants$override.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/BRP/routemanager/utils/Constants$override.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/EditNames.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/EditNames.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/EditSavedHome.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/EditSavedHome.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/ListFiles.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/ListFiles.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$integer.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$layout.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$menu.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$raw.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$style.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$styleable.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/UploadActivity.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/UploadActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/app/rmApp.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/BRP/routemanager/app/rmApp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/google/android/gms/wallet/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/google/android/gms/wallet/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/google/android/gms/wallet/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/google/android/gms/wallet/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/google/android/gms/fitness/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/google/android/gms/fitness/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/google/android/gms/fitness/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/google/android/gms/fitness/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/BRP/routemanager/utils/Constants$Pref.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/BRP/routemanager/utils/Constants$Pref.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/BRP/routemanager/utils/Constants.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/BRP/routemanager/utils/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/BRP/routemanager/utils/JSONParser.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/BRP/routemanager/utils/JSONParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/google/android/gms/cast/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/google/android/gms/cast/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/google/android/gms/cast/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/google/android/gms/cast/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/google/android/gms/gcm/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/google/android/gms/gcm/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/google/android/gms/gcm/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/google/android/gms/gcm/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/google/android/gms/location/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/google/android/gms/location/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/google/android/gms/location/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/google/android/gms/location/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/ads/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/ads/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/ads/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/ads/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/analytics/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/analytics/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/analytics/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/analytics/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/appinvite/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/appinvite/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/appinvite/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/appinvite/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/appstate/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/appstate/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/appstate/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/google/android/gms/appstate/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/appindexing/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/appindexing/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/appindexing/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/appindexing/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/nearby/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/nearby/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/nearby/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/nearby/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/panorama/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/panorama/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/panorama/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/panorama/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/wearable/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/wearable/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/wearable/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/wearable/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$1.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$2.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$3.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$4.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$5.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$6.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$UserLoginTask.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity$UserLoginTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteCreator$2.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteCreator$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteCreator.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteCreator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteCreatorHome$1.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteCreatorHome$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteCreatorHome$2.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteCreatorHome$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteCreatorHome$3.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteCreatorHome$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteCreatorHome.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteCreatorHome.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteManager.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/BRP/routemanager/activites/RouteManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/auth/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/auth/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/auth/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/auth/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/measurement/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/measurement/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/measurement/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/measurement/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/vision/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/vision/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/vision/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/vision/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/android/support/v7/mediarouter/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/google/android/gms/games/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/google/android/gms/games/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/google/android/gms/games/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/google/android/gms/games/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/google/android/gms/maps/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/google/android/gms/maps/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/google/android/gms/maps/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/google/android/gms/maps/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_7/com/google/android/gms/plus/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_7/com/google/android/gms/plus/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_7/com/google/android/gms/plus/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_7/com/google/android/gms/plus/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/google/android/gms/base/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/google/android/gms/base/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/google/android/gms/base/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/google/android/gms/base/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/google/android/gms/safetynet/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/google/android/gms/safetynet/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/google/android/gms/safetynet/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/google/android/gms/safetynet/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/google/android/gms/drive/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/google/android/gms/drive/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/google/android/gms/drive/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/google/android/gms/drive/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/google/android/gms/identity/R$id.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/google/android/gms/identity/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/google/android/gms/identity/R$string.class" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/google/android/gms/identity/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/outputs/apk/RouteManager-debug-unaligned.apk" afterPath="$PROJECT_DIR$/RouteManager/build/outputs/apk/RouteManager-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/outputs/apk/RouteManager-debug.apk" afterPath="$PROJECT_DIR$/RouteManager/build/outputs/apk/RouteManager-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/android/support/v7/mediarouter/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/android/support/v7/mediarouter/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/BRP/routemanager/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/BRP/routemanager/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/ads/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/ads/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/analytics/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/analytics/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/appindexing/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/appindexing/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/appinvite/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/appinvite/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/appstate/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/appstate/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/auth/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/auth/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/base/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/base/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/cast/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/cast/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/drive/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/drive/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/fitness/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/fitness/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/games/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/games/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/gcm/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/gcm/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/identity/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/identity/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/location/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/location/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/maps/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/maps/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/measurement/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/measurement/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/nearby/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/nearby/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/panorama/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/panorama/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/plus/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/plus/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/safetynet/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/safetynet/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/vision/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/vision/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/wallet/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/wallet/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/wearable/R.java" afterPath="$PROJECT_DIR$/RouteManager/build/generated/source/r/debug/com/google/android/gms/wearable/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/blame/res/debug/multi/values.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/blame/res/debug/single/layout.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/incremental/mergeDebugResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/instant-run-support/debug/manifest.crc" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/instant-run-support/debug/manifest.crc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/instant-run-support/debug/restart-changes.txt" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/instant-run-support/debug/restart-changes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/res/merged/debug/layout/creatorhome.xml" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/res/merged/debug/layout/creatorhome.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/res/merged/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/restart-dex/debug/build-info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/symbols/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/buildId.txt" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/buildId.txt" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/buildId.txt" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/buildId.txt" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/buildId.txt" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/buildId.txt" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/buildId.txt" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_7/buildId.txt" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_7/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/buildId.txt" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/buildId.txt" afterPath="$PROJECT_DIR$/RouteManager/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/RouteManager/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RouteManager/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/LoginActivity.java" afterPath="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteCreatorHome.java" afterPath="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteCreatorHome.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteManager.java" afterPath="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/app/rmApp.java" afterPath="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/app/rmApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/Constants.java" afterPath="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/src/main/res/layout/creatorhome.xml" afterPath="$PROJECT_DIR$/RouteManager/src/main/res/layout/creatorhome.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteManager/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/RouteManager/src/main/res/values/strings.xml" />
     </list>
     <ignored path="RouteManager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,56 +464,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/LoginActivity.java">
+      <file leaf-file-name="RouteManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85714287">
-              <caret line="169" column="68" selection-start-line="169" selection-start-column="68" selection-end-line="169" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3172#3318#0" expanded="true" />
-                <element signature="e#3317#3318#0" expanded="true" />
-                <element signature="e#4304#4346#0" expanded="true" />
-                <element signature="e#4542#4582#0" expanded="true" />
-                <element signature="e#5241#6171#0" expanded="true" />
-                <element signature="e#6170#6171#0" expanded="true" />
-                <element signature="e#6173#6450#0" expanded="true" />
-                <element signature="e#6449#6450#0" expanded="true" />
-                <element signature="e#9826#9870#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JSONParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/JSONParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1010#1045#0" expanded="true" />
-                <element signature="e#1047#1079#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/models/LoginRequest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state vertical-scroll-proportion="-5.785714">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrefManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/PrefManager.java">
+      <file leaf-file-name="RouteCreatorHome.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteCreatorHome.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2857143">
+              <caret line="148" column="41" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3367#3397#0" expanded="true" />
+                <element signature="e#3428#3455#0" expanded="true" />
+                <element signature="e#3598#3625#0" expanded="true" />
+                <element signature="e#6769#6984#0" expanded="true" />
+                <element signature="e#6983#6984#0" expanded="true" />
+                <element signature="e#9140#9170#0" expanded="true" />
+                <element signature="e#9331#9358#0" expanded="true" />
+                <element signature="e#10651#10678#0" expanded="true" />
+                <element signature="e#12851#12880#0" expanded="true" />
+                <element signature="e#13129#13161#0" expanded="true" />
+                <element signature="e#13331#13361#0" expanded="true" />
+                <element signature="e#13500#13529#0" expanded="true" />
+                <element signature="e#13655#13682#0" expanded="true" />
+                <element signature="e#13815#13847#0" expanded="true" />
+                <element signature="e#14028#14058#0" expanded="true" />
+                <element signature="e#14220#14248#0" expanded="true" />
+                <element signature="e#14410#14439#0" expanded="true" />
+                <element signature="e#14867#14896#0" expanded="true" />
+                <element signature="e#15192#15221#0" expanded="true" />
+                <element signature="e#15572#15602#0" expanded="true" />
+                <element signature="e#15730#15758#0" expanded="true" />
+                <element signature="e#15850#15879#0" expanded="true" />
+                <element signature="e#16050#16082#0" expanded="true" />
+                <element signature="e#16235#16267#0" expanded="true" />
+                <element signature="e#16431#16464#0" expanded="true" />
+                <element signature="e#16631#16662#0" expanded="true" />
+                <element signature="e#16817#16849#0" expanded="true" />
+                <element signature="e#17755#17783#0" expanded="true" />
+                <element signature="e#17816#17843#0" expanded="true" />
+                <element signature="e#17875#17904#0" expanded="true" />
+                <element signature="e#18795#18823#0" expanded="true" />
+                <element signature="e#18860#18887#0" expanded="true" />
+                <element signature="e#18923#18952#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rmApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/app/rmApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,22 +531,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RouteManager/src/main/AndroidManifest.xml">
+      <file leaf-file-name="creatorhome.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RouteManager/src/main/res/layout/creatorhome.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.333333">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.1454545">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="17" />
               <folding>
-                <element signature="e#1162#1180#0" expanded="true" />
-                <element signature="e#1333#1351#0" expanded="true" />
-                <element signature="e#1522#1539#0" expanded="true" />
-                <element signature="e#1696#1713#0" expanded="true" />
-                <element signature="e#1857#1871#0" expanded="true" />
-                <element signature="e#2019#2035#0" expanded="true" />
-                <element signature="e#2179#2195#0" expanded="true" />
-                <element signature="e#2344#2375#0" expanded="true" />
-                <element signature="e#2533#2551#0" expanded="true" />
+                <element signature="e#619#639#0" expanded="true" />
+                <element signature="e#961#978#0" expanded="true" />
+                <element signature="e#1166#1183#0" expanded="true" />
+                <element signature="e#1378#1398#0" expanded="true" />
+                <element signature="e#1722#1739#0" expanded="true" />
+                <element signature="e#1932#1949#0" expanded="true" />
+                <element signature="e#2159#2174#0" expanded="true" />
+                <element signature="e#2335#2350#0" expanded="true" />
+                <element signature="e#2533#2549#0" expanded="true" />
+                <element signature="e#2705#2721#0" expanded="true" />
+                <element signature="e#2899#2920#0" expanded="true" />
+                <element signature="e#3077#3098#0" expanded="true" />
+                <element signature="e#3517#3540#0" expanded="true" />
+                <element signature="e#3714#3736#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RouteManager/src/main/res/layout/manager.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.6181817">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -2050,22 +2507,25 @@
       <list>
         <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/PrefManager.java" />
         <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/app/App.java" />
-        <option value="$PROJECT_DIR$/RouteManager/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/RouteManager/build.gradle" />
-        <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteManager.java" />
-        <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteCreatorHome.java" />
         <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteCreator.java" />
         <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/DbHelper.java" />
-        <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/app/rmApp.java" />
         <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/models/LoginRequest.java" />
         <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/models/Response.java" />
         <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/models/LoginResponse.java" />
-        <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/Constants.java" />
         <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/CommonUtils.java" />
         <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/JSONParser.java" />
-        <option value="$PROJECT_DIR$/RouteManager/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/RouteManager/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/events/LocationChangedEvent.java" />
+        <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/LocationUtil.java" />
+        <option value="$PROJECT_DIR$/RouteManager/src/main/res/layout/creatorhome.xml" />
+        <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/Constants.java" />
+        <option value="$PROJECT_DIR$/RouteManager/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/RouteManager/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteManager.java" />
+        <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/app/rmApp.java" />
+        <option value="$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteCreatorHome.java" />
       </list>
     </option>
   </component>
@@ -2119,6 +2579,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="RouteManager-RouteManager" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteManager" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteManager-RouteManager" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2180,6 +2662,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteManager" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RouteManager-RouteManager" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routemanager" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2548,7 +3052,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2556,11 +3060,11 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -2602,16 +3106,15 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3172#3318#0" expanded="true" />
-            <element signature="e#3317#3318#0" expanded="true" />
-            <element signature="e#4304#4346#0" expanded="true" />
-            <element signature="e#4542#4582#0" expanded="true" />
-            <element signature="e#5241#6171#0" expanded="true" />
-            <element signature="e#6170#6171#0" expanded="true" />
-            <element signature="e#6173#6450#0" expanded="true" />
-            <element signature="e#6449#6450#0" expanded="true" />
-            <element signature="e#9826#9870#0" expanded="true" />
+            <element signature="e#2822#2968#0" expanded="true" />
+            <element signature="e#2967#2968#0" expanded="true" />
+            <element signature="e#3954#3996#0" expanded="true" />
+            <element signature="e#4192#4232#0" expanded="true" />
+            <element signature="e#4891#5821#0" expanded="true" />
+            <element signature="e#5820#5821#0" expanded="true" />
+            <element signature="e#5823#6100#0" expanded="true" />
+            <element signature="e#6099#6100#0" expanded="true" />
+            <element signature="e#9476#9520#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2624,34 +3127,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.09434">
-          <caret line="123" column="41" selection-start-line="123" selection-start-column="41" selection-end-line="123" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RouteManager/build/intermediates/res/merged/debug/values-v23/values-v23.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3333334">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15625">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteCreatorHome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.125">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2680,16 +3159,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/app/rmApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/models/LoginResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15625">
@@ -2706,24 +3175,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28125">
-          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/PrefManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/CommonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.75">
@@ -2734,36 +3185,6 @@
             <element signature="e#285#286#0" expanded="true" />
             <element signature="e#349#350#0" expanded="true" />
             <element signature="e#384#385#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/JSONParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1010#1045#0" expanded="true" />
-            <element signature="e#1047#1079#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.333333">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#1162#1180#0" expanded="true" />
-            <element signature="e#1333#1351#0" expanded="true" />
-            <element signature="e#1522#1539#0" expanded="true" />
-            <element signature="e#1696#1713#0" expanded="true" />
-            <element signature="e#1857#1871#0" expanded="true" />
-            <element signature="e#2019#2035#0" expanded="true" />
-            <element signature="e#2179#2195#0" expanded="true" />
-            <element signature="e#2344#2375#0" expanded="true" />
-            <element signature="e#2533#2551#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2782,29 +3203,201 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21875">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="e#2822#2968#0" expanded="true" />
+            <element signature="e#2967#2968#0" expanded="true" />
+            <element signature="e#3954#3996#0" expanded="true" />
+            <element signature="e#4192#4232#0" expanded="true" />
+            <element signature="e#4891#5821#0" expanded="true" />
+            <element signature="e#5820#5821#0" expanded="true" />
+            <element signature="e#5823#6100#0" expanded="true" />
+            <element signature="e#6099#6100#0" expanded="true" />
+            <element signature="e#9476#9520#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/JSONParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.375">
+          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1010#1045#0" expanded="true" />
+            <element signature="e#1047#1079#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/models/LoginRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.3125">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/LoginActivity.java">
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/PrefManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85714287">
-          <caret line="169" column="68" selection-start-line="169" selection-start-column="68" selection-end-line="169" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.6875">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3172#3318#0" expanded="true" />
-            <element signature="e#3317#3318#0" expanded="true" />
-            <element signature="e#4304#4346#0" expanded="true" />
-            <element signature="e#4542#4582#0" expanded="true" />
-            <element signature="e#5241#6171#0" expanded="true" />
-            <element signature="e#6170#6171#0" expanded="true" />
-            <element signature="e#6173#6450#0" expanded="true" />
-            <element signature="e#6449#6450#0" expanded="true" />
-            <element signature="e#9826#9870#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/res/layout/manager.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6181817">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/events/LocationChangedEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/LocationUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.1875">
+          <caret line="278" column="32" selection-start-line="278" selection-start-column="32" selection-end-line="278" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/res/layout/creatorhome.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1454545">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="e#619#639#0" expanded="true" />
+            <element signature="e#961#978#0" expanded="true" />
+            <element signature="e#1166#1183#0" expanded="true" />
+            <element signature="e#1378#1398#0" expanded="true" />
+            <element signature="e#1722#1739#0" expanded="true" />
+            <element signature="e#1932#1949#0" expanded="true" />
+            <element signature="e#2159#2174#0" expanded="true" />
+            <element signature="e#2335#2350#0" expanded="true" />
+            <element signature="e#2533#2549#0" expanded="true" />
+            <element signature="e#2705#2721#0" expanded="true" />
+            <element signature="e#2899#2920#0" expanded="true" />
+            <element signature="e#3077#3098#0" expanded="true" />
+            <element signature="e#3517#3540#0" expanded="true" />
+            <element signature="e#3714#3736#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/utils/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3125">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72">
+          <caret line="133" column="82" selection-start-line="133" selection-start-column="82" selection-end-line="133" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23646724">
+          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+          <folding>
+            <element signature="e#1162#1180#0" expanded="true" />
+            <element signature="e#1345#1369#0" expanded="true" />
+            <element signature="e#1468#1486#0" expanded="true" />
+            <element signature="e#1657#1674#0" expanded="true" />
+            <element signature="e#1831#1848#0" expanded="true" />
+            <element signature="e#1992#2006#0" expanded="true" />
+            <element signature="e#2154#2170#0" expanded="true" />
+            <element signature="e#2314#2330#0" expanded="true" />
+            <element signature="e#2479#2510#0" expanded="true" />
+            <element signature="e#2668#2686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.785714">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/app/rmApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RouteManager/src/main/java/com/BRP/routemanager/activites/RouteCreatorHome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2857143">
+          <caret line="148" column="41" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3367#3397#0" expanded="true" />
+            <element signature="e#3428#3455#0" expanded="true" />
+            <element signature="e#3598#3625#0" expanded="true" />
+            <element signature="e#6769#6984#0" expanded="true" />
+            <element signature="e#6983#6984#0" expanded="true" />
+            <element signature="e#9140#9170#0" expanded="true" />
+            <element signature="e#9331#9358#0" expanded="true" />
+            <element signature="e#10651#10678#0" expanded="true" />
+            <element signature="e#12851#12880#0" expanded="true" />
+            <element signature="e#13129#13161#0" expanded="true" />
+            <element signature="e#13331#13361#0" expanded="true" />
+            <element signature="e#13500#13529#0" expanded="true" />
+            <element signature="e#13655#13682#0" expanded="true" />
+            <element signature="e#13815#13847#0" expanded="true" />
+            <element signature="e#14028#14058#0" expanded="true" />
+            <element signature="e#14220#14248#0" expanded="true" />
+            <element signature="e#14410#14439#0" expanded="true" />
+            <element signature="e#14867#14896#0" expanded="true" />
+            <element signature="e#15192#15221#0" expanded="true" />
+            <element signature="e#15572#15602#0" expanded="true" />
+            <element signature="e#15730#15758#0" expanded="true" />
+            <element signature="e#15850#15879#0" expanded="true" />
+            <element signature="e#16050#16082#0" expanded="true" />
+            <element signature="e#16235#16267#0" expanded="true" />
+            <element signature="e#16431#16464#0" expanded="true" />
+            <element signature="e#16631#16662#0" expanded="true" />
+            <element signature="e#16817#16849#0" expanded="true" />
+            <element signature="e#17755#17783#0" expanded="true" />
+            <element signature="e#17816#17843#0" expanded="true" />
+            <element signature="e#17875#17904#0" expanded="true" />
+            <element signature="e#18795#18823#0" expanded="true" />
+            <element signature="e#18860#18887#0" expanded="true" />
+            <element signature="e#18923#18952#0" expanded="true" />
           </folding>
         </state>
       </provider>

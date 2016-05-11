@@ -28,6 +28,7 @@ public class RouteManager extends Activity
         setContentView(R.layout.manager);
 	ipET = (EditText) findViewById(R.id.ip);
 	ipET.setText(ip);
+
     }
 
     @Override

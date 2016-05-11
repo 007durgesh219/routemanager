@@ -361,6 +361,7 @@
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
+    <string name="google_api_key">AIzaSyDWG1FdZv4f-4Fbvx8SqY15BoXRi9aiswU</string>
     <string name="gps_av">GPS Now Available!</string>
     <string name="gps_disabled">GPS Disabled!</string>
     <string name="gps_enabled">GPS Enabled!</string>
