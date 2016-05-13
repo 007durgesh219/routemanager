@@ -30,116 +30,115 @@ import com.BRP.routemanager.app.rmApp;
 import java.lang.System;
 
 public class RouteCreator extends Activity
-	implements LocationListener, GpsStatus.Listener
-{
+        implements LocationListener, GpsStatus.Listener {
     private LocationManager lM;
     private Location CurrLocation;
     private boolean isGPSFix;
     private long mLastLocationMillis;
 
-    private TextView showLoc; 
-    private EditText stop,stopLat,stopLon;
+    private TextView showLoc;
+    private EditText stop, stopLat, stopLon;
 
-    public static String routeName,cityName;
+    public static String routeName, cityName;
     public DbHelper dbHelper;
 
     public static int ctr;
 
     public void onGpsStatusChanged(int event) {
-	switch(event) {
-		case GpsStatus.GPS_EVENT_SATELLITE_STATUS:
-			if (CurrLocation != null)
-				isGPSFix = (SystemClock.elapsedRealtime() - mLastLocationMillis) < 5000;
-			
-			if (!isGPSFix){
-				if(CurrLocation == null)
-					showLoc.setText("Location Unavailable!");
-				else
-					showLoc.setText("Location lost...");
-			}
-			
-			break;
-		default: break;
-	}
+        switch (event) {
+            case GpsStatus.GPS_EVENT_SATELLITE_STATUS:
+                if (CurrLocation != null)
+                    isGPSFix = (SystemClock.elapsedRealtime() - mLastLocationMillis) < 5000;
+
+                if (!isGPSFix) {
+                    if (CurrLocation == null)
+                        showLoc.setText("Location Unavailable!");
+                    else
+                        showLoc.setText("Location lost...");
+                }
+
+                break;
+            default:
+                break;
+        }
     }
 
     @Override
     public void onLocationChanged(Location loc) {
-	CurrLocation = loc;
-	updateUI();
-	if (loc != null)
-		mLastLocationMillis = SystemClock.elapsedRealtime();
+        CurrLocation = loc;
+        updateUI();
+        if (loc != null)
+            mLastLocationMillis = SystemClock.elapsedRealtime();
     }
-	
+
     @Override
     public void onProviderEnabled(String provider) {
-	Toast.makeText(this, getString(R.string.gps_enabled),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.gps_enabled), Toast.LENGTH_SHORT).show();
     }
-	
+
     @Override
     public void onProviderDisabled(String provider) {
-	Toast.makeText(this, getString(R.string.gps_disabled),Toast.LENGTH_SHORT).show();
-	showSettingsAlert();
+        Toast.makeText(this, getString(R.string.gps_disabled), Toast.LENGTH_SHORT).show();
+        showSettingsAlert();
     }
-	
+
     @Override
     public void onStatusChanged(String provider, int status, Bundle extras) {
-	if( provider == LocationManager.GPS_PROVIDER) {
-	switch (status) {
-	    case LocationProvider.OUT_OF_SERVICE:
-		 Toast.makeText(this, getString(R.string.gps_unav),Toast.LENGTH_SHORT).show();
-		break;
-	    case LocationProvider.TEMPORARILY_UNAVAILABLE:
-		Toast.makeText(this, getString(R.string.gps_temp_unav),Toast.LENGTH_SHORT).show();
-		break;
-	    case LocationProvider.AVAILABLE:
-		Toast.makeText(this, getString(R.string.gps_av),Toast.LENGTH_SHORT).show();
-		break;
-	}
-	}
+        if (provider == LocationManager.GPS_PROVIDER) {
+            switch (status) {
+                case LocationProvider.OUT_OF_SERVICE:
+                    Toast.makeText(this, getString(R.string.gps_unav), Toast.LENGTH_SHORT).show();
+                    break;
+                case LocationProvider.TEMPORARILY_UNAVAILABLE:
+                    Toast.makeText(this, getString(R.string.gps_temp_unav), Toast.LENGTH_SHORT).show();
+                    break;
+                case LocationProvider.AVAILABLE:
+                    Toast.makeText(this, getString(R.string.gps_av), Toast.LENGTH_SHORT).show();
+                    break;
+            }
+        }
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-	super.onCreate(savedInstanceState);
-	setContentView(R.layout.creatormain);
-	Intent i = getIntent();
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.creatormain);
+        Intent i = getIntent();
 
-	routeName = i.getStringExtra(getString(R.string.routeKey));
- 	cityName = i.getStringExtra(getString(R.string.cityKey));
+        routeName = i.getStringExtra(getString(R.string.routeKey));
+        cityName = i.getStringExtra(getString(R.string.cityKey));
 
-	showLoc = (TextView) findViewById(R.id.showLoc);
-	stop = (EditText) findViewById(R.id.stopName);
-	stopLat = (EditText) findViewById(R.id.stopLat);
-	stopLon = (EditText) findViewById(R.id.stopLon);
+        showLoc = (TextView) findViewById(R.id.showLoc);
+        stop = (EditText) findViewById(R.id.stopName);
+        stopLat = (EditText) findViewById(R.id.stopLat);
+        stopLon = (EditText) findViewById(R.id.stopLon);
 
-	if (savedInstanceState != null)	{
-		showLoc.setText(savedInstanceState.getString("showLoc"));
-		stop.setText(savedInstanceState.getString("stop"));
-		stopLat.setText(savedInstanceState.getString("stopLat"));
-		stopLon.setText(savedInstanceState.getString("stopLon"));
-		isGPSFix = savedInstanceState.getBoolean("isGPSFix");
-		ctr = savedInstanceState.getInt("ctr");
-		mLastLocationMillis = savedInstanceState.getLong("mLLM");	    
-	}
-	else {
-		ctr = 1;
-		stop.setText(routeName.substring(routeName.indexOf("_From_")+6, routeName.indexOf("_Towards_")).replaceAll("_"," "));
-		isGPSFix = false;
-		mLastLocationMillis = 0;
-	}
+        if (savedInstanceState != null) {
+            showLoc.setText(savedInstanceState.getString("showLoc"));
+            stop.setText(savedInstanceState.getString("stop"));
+            stopLat.setText(savedInstanceState.getString("stopLat"));
+            stopLon.setText(savedInstanceState.getString("stopLon"));
+            isGPSFix = savedInstanceState.getBoolean("isGPSFix");
+            ctr = savedInstanceState.getInt("ctr");
+            mLastLocationMillis = savedInstanceState.getLong("mLLM");
+        } else {
+            ctr = 1;
+            stop.setText(routeName.substring(routeName.indexOf("_From_") + 6, routeName.indexOf("_Towards_")).replaceAll("_", " "));
+            isGPSFix = false;
+            mLastLocationMillis = 0;
+        }
 
-	lM = (LocationManager) getSystemService(LOCATION_SERVICE);
-	lM.addGpsStatusListener(this);
+        lM = (LocationManager) getSystemService(LOCATION_SERVICE);
+        lM.addGpsStatusListener(this);
 
-	dbHelper = new DbHelper(rmApp.getAppContext(),cityName,routeName);
+        dbHelper = new DbHelper(rmApp.getAppContext(), cityName, routeName);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         lM.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, this);
-	lM.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 3000, 0, this);
+        lM.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 3000, 0, this);
     }
 
     @Override
@@ -150,37 +149,37 @@ public class RouteCreator extends Activity
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-	super.onSaveInstanceState(outState);
-	outState.putString("showLoc",showLoc.getText().toString());
-	outState.putString("stop",stop.getText().toString());
-	outState.putString("stopLat",stopLat.getText().toString());
-	outState.putString("stopLon",stopLon.getText().toString());
-	outState.putBoolean("isGPSFix",isGPSFix);
-	outState.putInt("ctr",ctr);
-	outState.putLong("mLLM",mLastLocationMillis);
+        super.onSaveInstanceState(outState);
+        outState.putString("showLoc", showLoc.getText().toString());
+        outState.putString("stop", stop.getText().toString());
+        outState.putString("stopLat", stopLat.getText().toString());
+        outState.putString("stopLon", stopLon.getText().toString());
+        outState.putBoolean("isGPSFix", isGPSFix);
+        outState.putInt("ctr", ctr);
+        outState.putLong("mLLM", mLastLocationMillis);
     }
- 
+
     @Override
     public void onDestroy() {
-	super.onDestroy();
-	dbHelper.closeDB();
+        super.onDestroy();
+        dbHelper.closeDB();
     }
 
     @Override
     public void onBackPressed() {
-	dbHelper.delTable();
-	dbHelper.closeDB();
-	Intent intent = new Intent(this,RouteCreatorHome.class);
-	startActivity(intent);
-	finish();
-    }	
+        dbHelper.delTable();
+        dbHelper.closeDB();
+        Intent intent = new Intent(this, RouteCreatorHome.class);
+        startActivity(intent);
+        finish();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-	// Inflate the menu items for use in the action bar
-	MenuInflater inflater = getMenuInflater();
-	inflater.inflate(R.menu.main_activity_actions, menu);
-	return super.onCreateOptionsMenu(menu);
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_activity_actions, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -194,21 +193,22 @@ public class RouteCreator extends Activity
                 return super.onOptionsItemSelected(item);
         }
     }
-   
-    protected void openSettings() {}
 
-    public void showSettingsAlert(){
+    protected void openSettings() {
+    }
+
+    public void showSettingsAlert() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
-      
+
         // Setting Dialog Title
         alertDialog.setTitle("GPS is disabled!");
-  
+
         // Setting Dialog Message
         alertDialog.setMessage("Please enable GPS to use this app!");
-  
+
         // On pressing Settings button
         alertDialog.setPositiveButton("Settings", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog,int which) {
+            public void onClick(DialogInterface dialog, int which) {
                 Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
                 startActivity(intent);
             }
@@ -220,12 +220,12 @@ public class RouteCreator extends Activity
             dialog.cancel();
             }
         }); */
-  
+
         // Showing Alert Message
         alertDialog.show();
     }
 
-    public void showNotCompleteAlert(final Class act){
+    public void showNotCompleteAlert(final Class act) {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
 
         alertDialog.setTitle("Route may not be Complete!");
@@ -233,39 +233,39 @@ public class RouteCreator extends Activity
         alertDialog.setMessage("Route's last stop doesn't match the destination.\nAre you sure you wish to continue?");
 
         alertDialog.setPositiveButton("Continue", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog,int which) {
-		dbHelper.closeDB();
-		Intent intent = new Intent(RouteCreator.this,act);
-		intent.putExtra(getString(R.string.routeKey),routeName);
-		intent.putExtra(getString(R.string.cityKey),cityName);
-		intent.putExtra(getString(R.string.parentKey),"create");
-		startActivity(intent);
-		finish();
+            public void onClick(DialogInterface dialog, int which) {
+                dbHelper.closeDB();
+                Intent intent = new Intent(RouteCreator.this, act);
+                intent.putExtra(getString(R.string.routeKey), routeName);
+                intent.putExtra(getString(R.string.cityKey), cityName);
+                intent.putExtra(getString(R.string.parentKey), "create");
+                startActivity(intent);
+                finish();
             }
         });
 
         alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-            dialog.cancel();
+                dialog.cancel();
             }
         });
 
         alertDialog.show();
     }
 
-    protected void updateUI() {	
-	String coord = getResources().getString(R.string.loc_unav);
+    protected void updateUI() {
+        String coord = getResources().getString(R.string.loc_unav);
 
-	if (CurrLocation != null) {
-		String lat = String.valueOf(CurrLocation.getLatitude());
-		String lon = String.valueOf(CurrLocation.getLongitude());
-		String txt = getResources().getString(R.string.loc_av);
-		String acc = getResources().getString(R.string.loc_acc);
-		String acc_val = String.valueOf(CurrLocation.getAccuracy());
-		coord = txt + "\n" + lat + " , " + lon + "\n" + acc + "\n" + acc_val + " m.";
-	}
+        if (CurrLocation != null) {
+            String lat = String.valueOf(CurrLocation.getLatitude());
+            String lon = String.valueOf(CurrLocation.getLongitude());
+            String txt = getResources().getString(R.string.loc_av);
+            String acc = getResources().getString(R.string.loc_acc);
+            String acc_val = String.valueOf(CurrLocation.getAccuracy());
+            coord = txt + "\n" + lat + " , " + lon + "\n" + acc + "\n" + acc_val + " m.";
+        }
 
-	showLoc.setText(coord);
+        showLoc.setText(coord);
     }
 
     public boolean isExternalStorageWritable() {
@@ -277,60 +277,55 @@ public class RouteCreator extends Activity
     }
 
     public void CopyLoc(View view) {
-	if (CurrLocation != null) {
-		stopLat.setText(String.valueOf(CurrLocation.getLatitude()));
-		stopLon.setText(String.valueOf(CurrLocation.getLongitude()));
-	}
+        if (CurrLocation != null) {
+            stopLat.setText(String.valueOf(CurrLocation.getLatitude()));
+            stopLon.setText(String.valueOf(CurrLocation.getLongitude()));
+        }
     }
-	
+
 
     private boolean valid() {
-	if (stop.getText().toString().trim().length() == 0) {
-		Toast.makeText(this,getString(R.string.stopEmpty),Toast.LENGTH_SHORT).show();
-		return false;
-	}
-	else if(stopLat.getText().toString().trim().length() == 0) {
-		Toast.makeText(this,getString(R.string.latEmpty_error),Toast.LENGTH_SHORT).show();
-		return false;
-	}
-	else if(stopLon.getText().toString().trim().length() == 0) {
-		Toast.makeText(this,getString(R.string.lonEmpty_error),Toast.LENGTH_SHORT).show();
-		return false;
-	}
-	else {
-		Double lat = Double.parseDouble(stopLat.getText().toString());
-		Double lon = Double.parseDouble(stopLon.getText().toString());
+        if (stop.getText().toString().trim().length() == 0) {
+            Toast.makeText(this, getString(R.string.stopEmpty), Toast.LENGTH_SHORT).show();
+            return false;
+        } else if (stopLat.getText().toString().trim().length() == 0) {
+            Toast.makeText(this, getString(R.string.latEmpty_error), Toast.LENGTH_SHORT).show();
+            return false;
+        } else if (stopLon.getText().toString().trim().length() == 0) {
+            Toast.makeText(this, getString(R.string.lonEmpty_error), Toast.LENGTH_SHORT).show();
+            return false;
+        } else {
+            Double lat = Double.parseDouble(stopLat.getText().toString());
+            Double lon = Double.parseDouble(stopLon.getText().toString());
 
-		if(lat > 90 || lat < -90) {
-			Toast.makeText(this,getString(R.string.latRange_error),Toast.LENGTH_SHORT).show();
-			return false;
-		}
-		else if(lon > 180 || lon < -180) {
-			Toast.makeText(this,getString(R.string.lonRange_error),Toast.LENGTH_SHORT).show();
-			return false;
-		}	
-		else
-			return true;
-	}
+            if (lat > 90 || lat < -90) {
+                Toast.makeText(this, getString(R.string.latRange_error), Toast.LENGTH_SHORT).show();
+                return false;
+            } else if (lon > 180 || lon < -180) {
+                Toast.makeText(this, getString(R.string.lonRange_error), Toast.LENGTH_SHORT).show();
+                return false;
+            } else
+                return true;
+        }
     }
 
     private void reset() {
-	stop.setText(getResources().getString(R.string.stop) + String.valueOf(ctr));
-	stopLat.setText("");
-	stopLon.setText("");
+        stop.setText(getResources().getString(R.string.stop) + String.valueOf(ctr));
+        stopLat.setText("");
+        stopLon.setText("");
     }
 
     public void AddStop(View view) {
-	if (valid()) {
-	    	dbHelper.addStop(stop.getText().toString().trim(),stopLat.getText().toString(),stopLon.getText().toString(),String.valueOf(System.currentTimeMillis())); 	
-		ctr++;
-		reset();
-		Toast.makeText(this, getString(R.string.add_success),Toast.LENGTH_SHORT).show();
-	}
+        if (valid()) {
+            dbHelper.addStop(stop.getText().toString().trim(), stopLat.getText().toString(), stopLon.getText().toString(), String.valueOf(System.currentTimeMillis()));
+            ctr++;
+            reset();
+            Toast.makeText(this, getString(R.string.add_success), Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void uploadRoute(View view) {
-	String lastStop = dbHelper.getLastStop();
+    /*String lastStop = dbHelper.getLastStop();
 	String dest = routeName.substring(routeName.indexOf("_Towards_") + 9);
 
 	if (lastStop == "") {
@@ -349,38 +344,34 @@ public class RouteCreator extends Activity
 		intent.putExtra(getString(R.string.cityKey),cityName);
 		startActivity(intent);
 		finish();
-	}
+	}*/
     }
 
     public void save(View view) {
-	String lastStop = dbHelper.getLastStop();
-	String dest = routeName.substring(routeName.indexOf("_Towards_") + 9);
+       /* String lastStop = dbHelper.getLastStop();
+        String dest = routeName.substring(routeName.indexOf("_Towards_") + 9);
 
-	if (lastStop == "") {
-		Toast.makeText(this,"You haven't added any stop to this route!",Toast.LENGTH_SHORT).show();
-		return;
-	}
-
-	else if ( lastStop.toLowerCase().equals(dest.toLowerCase()) == false ) {
-		showNotCompleteAlert(ListFiles.class);
-	}
-
-	else {
-		dbHelper.closeDB();
-		Intent intent = new Intent(this,ListFiles.class);
-		intent.putExtra(getString(R.string.routeKey),routeName);
-		intent.putExtra(getString(R.string.cityKey),cityName);
-		intent.putExtra(getString(R.string.parentKey),"create");
-		startActivity(intent);
-		finish();
-	}
+        if (lastStop == "") {
+            Toast.makeText(this, "You haven't added any stop to this route!", Toast.LENGTH_SHORT).show();
+            return;
+        } else if (lastStop.toLowerCase().equals(dest.toLowerCase()) == false) {
+            showNotCompleteAlert(ListFiles.class);
+        } else {
+            dbHelper.closeDB();
+            Intent intent = new Intent(this, ListFiles.class);
+            intent.putExtra(getString(R.string.routeKey), routeName);
+            intent.putExtra(getString(R.string.cityKey), cityName);
+            intent.putExtra(getString(R.string.parentKey), "create");
+            startActivity(intent);
+            finish();
+        }*/
     }
 
     public void cancel(View view) {
-	dbHelper.delTable();
-	dbHelper.closeDB();
-	Intent intent = new Intent(this,RouteCreatorHome.class);
-	startActivity(intent);
-	finish();
+        dbHelper.delTable();
+        dbHelper.closeDB();
+        Intent intent = new Intent(this, RouteCreatorHome.class);
+        startActivity(intent);
+        finish();
     }
 }

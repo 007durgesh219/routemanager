@@ -518,6 +518,8 @@ public class RouteCreatorHome extends FragmentActivity
     }
 
     public void saveData(View view) {
+        DbHelper helper = new DbHelper(this, City, "route_"+Route+"_"+Corp);
+        helper.setTable((Stop[]) stops.toArray());
         finish();
     }
 

@@ -4,7 +4,7 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="32165841982069" >
+    timestamp="39511892154612" >
 
     <task
         name="javac"
@@ -19,21 +19,19 @@
         name="verifier"
         duration="0" />
 
-    <build timestamp="31411042566071" >
+    <artifact
+        location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
+        type="DEX" />
+
+    <build timestamp="39257321962155" >
         <artifact
             location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/outputs/apk/RouteManager-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="31704276067807" >
+    <build timestamp="39511892154612" >
         <artifact
-            location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
+            location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
             type="DEX" />
     </build>
-    <build timestamp="32140434992898" >
-        <artifact
-            location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
-    </build>
-    <build timestamp="32165841982069" />
 
 </instant-run>

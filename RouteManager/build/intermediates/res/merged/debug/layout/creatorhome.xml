@@ -128,6 +128,13 @@
             android:onClick="addStop"
             android:visibility="gone"
             />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/save"
+            android:text="Save Data and Exit"
+            android:onClick="saveStops"
+            android:visibility="gone"/>
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"

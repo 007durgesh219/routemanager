@@ -301,7 +301,6 @@ public class LocationUtil implements GoogleApiClient.ConnectionCallbacks,
         mLastUpdateTime = DateFormat.getTimeInstance().format(new Date());
         CommonUtils.logStatus(TAG, "Location updated ->"+location.getLatitude()+":"+location.getLongitude());
         EventBus.getDefault().post(new LocationChangedEvent(mCurrentLocation));
-        stopLocationUpdates();
     }
 
     @Override
