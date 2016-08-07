@@ -217,14 +217,14 @@ ADDED from /home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/Andro
 		ADDED from /home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/AndroidManifest.xml:44:13-41
 	android:name
 		ADDED from /home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/AndroidManifest.xml:43:13-38
-activity#com.BRP.routemanager.EditSavedHome
+activity#com.BRP.routemanager.activites.EditSavedHome
 ADDED from /home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/AndroidManifest.xml:46:9-49:61
 	android:screenOrientation
 		ADDED from /home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/AndroidManifest.xml:49:13-49
 	android:label
 		ADDED from /home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/AndroidManifest.xml:48:13-43
 	android:name
-		ADDED from /home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/AndroidManifest.xml:47:13-42
+		ADDED from /home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/AndroidManifest.xml:47:13-52
 activity#com.BRP.routemanager.EditNames
 ADDED from /home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/AndroidManifest.xml:50:9-53:61
 	android:screenOrientation

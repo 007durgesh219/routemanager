@@ -60,7 +60,7 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        if (PrefManager.isLoggedIn()) {
+        if (!PrefManager.isLoggedIn()) {
             Intent home = new Intent(this, RouteManager.class);
             startActivity(home);
         }

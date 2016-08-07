@@ -44,7 +44,7 @@
             android:label="@string/list"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".EditSavedHome"
+            android:name=".activites.EditSavedHome"
             android:label="@string/editor"
             android:screenOrientation="portrait"></activity>
         <activity

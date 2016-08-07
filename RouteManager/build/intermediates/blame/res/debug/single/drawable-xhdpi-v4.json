@@ -232,12 +232,12 @@
         "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-xhdpi/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cast_ic_notification_on.png",
-        "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.4.0/res/drawable-xhdpi/cast_ic_notification_on.png"
-    },
-    {
         "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_dark_disabled.9.png",
         "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/drawable-xhdpi-v4/cast_ic_notification_on.png",
+        "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.4.0/res/drawable-xhdpi/cast_ic_notification_on.png"
     },
     {
         "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_media_pause.png",

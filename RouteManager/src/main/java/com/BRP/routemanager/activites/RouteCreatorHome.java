@@ -111,12 +111,12 @@ public class RouteCreatorHome extends FragmentActivity
             for (int i = 0; i < l; i++) {
                 String name = files[i].getName();
 
-                String temp = name.substring(0, name.indexOf("_Corp_"));
+                //String temp = name.substring(0, name.indexOf("_Corp_"));
 
-                temp.replaceAll("_", " ");
+                //temp.replaceAll("_", " ");
 
                 if (name.contains("journal") == false) {
-                    spinnerText.add(temp);
+                    spinnerText.add(name);
                 }
             }
         }
@@ -378,7 +378,7 @@ public class RouteCreatorHome extends FragmentActivity
             //City = City + "_Corp_" + Corp;
             //RVnC();
             findViewById(R.id.route_info_layout).setVisibility(View.GONE);
-            findViewById(R.id.add_stop).setVisibility(View.VISIBLE);
+            findViewById(R.id.stop_handler_layout).setVisibility(View.VISIBLE);
             findViewById(R.id.create_route).setVisibility(View.GONE);
             findViewById(R.id.reset_form).setVisibility(View.GONE);
         }
@@ -499,10 +499,8 @@ public class RouteCreatorHome extends FragmentActivity
         if (stopInfoDialog == null) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setView(R.layout.stop_info_dialog_layout);
+            builder.setTitle("Enter Stop Info");
             stopInfoDialog = builder.create();
-            stopInfoDialog.setTitle("Enter Stop Info");
-            ((EditText)stopInfoDialog.findViewById(R.id.stop_name)).setText("");
-            ((EditText)stopInfoDialog.findViewById(R.id.stop_number)).setText(nextPos+"");
             stopInfoDialog.setButton(DialogInterface.BUTTON_POSITIVE, "Add Stop", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
@@ -515,46 +513,18 @@ public class RouteCreatorHome extends FragmentActivity
             });
         }
         stopInfoDialog.show();
+        ((EditText)stopInfoDialog.findViewById(R.id.stop_name)).setText("");
+        ((EditText)stopInfoDialog.findViewById(R.id.stop_number)).setText(nextPos+"");
     }
 
     public void saveData(View view) {
         DbHelper helper = new DbHelper(this, City, "route_"+Route+"_"+Corp);
-        helper.setTable((Stop[]) stops.toArray());
+        helper.setTable(stops.toArray(new Stop[]{}));
         finish();
     }
 
-    private void RVnC() {
-        ArrayList<String> Routes = new ArrayList<String>();
-        DbHelper db = new DbHelper(rmApp.getAppContext(), City);
-        Cursor c = db.getTables();
-        if (c != null && c.getCount() > 0) {
-            c.moveToFirst();
-            while (!c.isAfterLast()) {
-                Routes.add(c.getString(0));
-                c.moveToNext();
-            }
-        } else {
-            Routes.add("");
-        }
-        db.closeDB();
+    public void upload(View view) {
 
-        boolean flag = true;
-        for (String temp : Routes) {
-            if (Route.toLowerCase().equals(temp.toLowerCase())) {
-                routeAlert();
-                flag = false;
-                break;
-            }
-        }
-
-        if (flag) {
-            Intent i = new Intent(this, RouteCreator.class);
-            i.putExtra(getString(R.string.routeKey), Route);
-            i.putExtra(getString(R.string.cityKey), City);
-            i.putExtra(getString(R.string.parentKey), "create");
-            startActivity(i);
-            finish();
-        }
     }
 
     private void routeAlert() {

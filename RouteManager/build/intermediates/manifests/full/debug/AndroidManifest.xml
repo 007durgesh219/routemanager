@@ -53,7 +53,7 @@
             android:label="@string/list"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.BRP.routemanager.EditSavedHome"
+            android:name="com.BRP.routemanager.activites.EditSavedHome"
             android:label="@string/editor"
             android:screenOrientation="portrait" />
         <activity

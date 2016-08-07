@@ -28,12 +28,12 @@
         "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/layout/activity_upload.xml",
-        "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/res/layout/activity_upload.xml"
-    },
-    {
         "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
         "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/layout/activity_upload.xml",
+        "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/res/layout/activity_upload.xml"
     },
     {
         "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/layout/editrefine.xml",
@@ -192,24 +192,24 @@
         "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/layout/abc_action_mode_bar.xml"
     },
     {
-        "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/layout/activity_login.xml",
-        "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/res/layout/activity_login.xml"
-    },
-    {
         "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
         "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/layout/activity_login.xml",
+        "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/res/layout/activity_login.xml"
     },
     {
         "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
         "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/layout/editnames.xml",
-        "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/res/layout/editnames.xml"
-    },
-    {
         "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
         "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/layout/editnames.xml",
+        "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/src/main/res/layout/editnames.xml"
     },
     {
         "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",

@@ -1,284 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
+    android:orientation="vertical">
 
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:orientation="horizontal"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-	    <TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:textSize="20sp"
-		android:text="@string/routeName" />
-
-	    <TextView
-		android:id="@+id/currRoute"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_weight="1"
-		android:textSize="22sp"
-		android:textStyle="bold"
-		android:gravity="center_horizontal" />
-
-	</LinearLayout>
-
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:orientation="horizontal"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_marginTop="5dp"
-	    >	
-
-		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		    android:orientation="vertical"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_weight="1"
-		    >
-		
-		    <TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:textSize="16sp"
-		 	android:text="@string/routeNew" />
-
-		    <EditText
-			android:id="@+id/routeNew"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textSize="16sp"
-			android:hint="@string/routeNew"
-			android:inputType="textCapCharacters" />
-
-		</LinearLayout>
-
-		<Button
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="16sp"
-		    android:text="@string/button_routeNew"
-		    android:onClick="routeUpdate" />
-
-	</LinearLayout>
-
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:orientation="horizontal"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_marginTop="5dp"
-	    >
-
-	    <TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:textSize="20sp"
-		android:text="@string/srcName" />
-
-	    <TextView
-		android:id="@+id/currSrc"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_weight="1"
-		android:textSize="22sp"
-		android:textStyle="bold"
-		android:gravity="center_horizontal" />
-
-	</LinearLayout>
-
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:orientation="horizontal"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_marginTop="5dp"
-	    >	
-
-		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		    android:orientation="vertical"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_weight="1"
-		    >
-		
-		    <TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:textSize="16sp"
-		 	android:text="@string/srcNew" />
-
-		    <EditText
-			android:id="@+id/srcNew"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textSize="16sp"
-			android:hint="@string/srcNew"
-			android:inputType="textCapWords" />
-
-		</LinearLayout>
-
-		<Button
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="16sp"
-		    android:text="@string/button_srcNew"
-		    android:onClick="srcUpdate" />
-
-	</LinearLayout>
-
-
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:orientation="horizontal"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_marginTop="5dp"
-	    >
-
-	    <TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:textSize="20sp"
-		android:text="@string/destName" />
-
-	    <TextView
-		android:id="@+id/currDest"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_weight="1"
-		android:textSize="22sp"
-		android:textStyle="bold"
-		android:gravity="center_horizontal" />
-
-	</LinearLayout>
-
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:orientation="horizontal"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_marginTop="5dp"
-	    >	
-
-		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		    android:orientation="vertical"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_weight="1"
-		    >
-		
-		    <TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:textSize="16sp"
-		 	android:text="@string/destNew" />
-
-		    <EditText
-			android:id="@+id/destNew"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textSize="16sp"
-			android:hint="@string/destNew"
-			android:inputType="textCapWords" />
-
-		</LinearLayout>
-
-		<Button
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="16sp"
-		    android:text="@string/button_destNew"
-		    android:onClick="destUpdate" />
-
-	</LinearLayout>
-
-    <TextView
-	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
-	android:layout_marginTop="10dp"
-	android:textSize="16sp"
-	android:text="@string/stopSel" />
-
-    <Spinner
-	android:id="@+id/stopSelectSpinner"
-	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
-	android:spinnerMode="dialog" />
-
-	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:orientation="horizontal"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    >	
-
-		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		    android:orientation="vertical"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:layout_weight="1"
-		    >
-		
-		    <TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:textSize="16sp"
-		 	android:text="@string/stopNew" />
-
-		    <EditText
-			android:id="@+id/stopNew"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:textSize="16sp"
-			android:hint="@string/stopNew"
-			android:inputType="textCapWords" />
-
-		</LinearLayout>
-
-		<Button
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:textSize="16sp"
-		    android:text="@string/button_stopNew"
-		    android:onClick="stopUpdate" />
-
-	</LinearLayout>
-
-    <TextView
-	android:layout_width="match_parent"
-	android:layout_height="wrap_content"
-	android:layout_weight="1"
-	android:text = " " />
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:orientation="horizontal"
-	android:layout_gravity="center_horizontal" >	
-
-	<Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/button_uploadCreator"
-	    android:textSize="16sp"
-	    android:onClick="upload" />
-    	
-	<Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/button_saveCreator"
-	    android:textSize="16sp"
-	    android:onClick="save" />	
+            android:orientation="vertical">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/button_cancel"
-	    android:textSize="16sp"
-	    android:onClick="cancel" />
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    </LinearLayout> 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/routeName"
+                    android:textSize="20sp" />
 
+                <TextView
+                    android:id="@+id/currRoute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/routeNew"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/routeNew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/routeNew"
+                        android:inputType="textCapCharacters"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="routeUpdate"
+                    android:text="@string/button_routeNew"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/stops_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="upload"
+                    android:text="@string/button_uploadCreator"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="save"
+                    android:text="@string/button_saveCreator"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="cancel"
+                    android:text="@string/button_cancel"
+                    android:textSize="16sp" />
+
+                <LinearL />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
-

@@ -396,12 +396,12 @@
         "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_media_route_on_2_mono_dark.png"
     },
     {
-        "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/drawable-hdpi-v4/common_google_signin_btn_text_light_normal.9.png",
-        "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-hdpi/common_google_signin_btn_text_light_normal.9.png"
-    },
-    {
         "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/drawable-hdpi-v4/common_plus_signin_btn_icon_light_disabled.9.png",
         "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-hdpi/common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/drawable-hdpi-v4/common_google_signin_btn_text_light_normal.9.png",
+        "source": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-hdpi/common_google_signin_btn_text_light_normal.9.png"
     },
     {
         "merged": "/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_plusone_small_off_client.png",

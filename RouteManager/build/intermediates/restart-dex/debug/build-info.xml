@@ -4,34 +4,29 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="39511892154612" >
+    timestamp="42130740713385" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="298" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="4" />
     <task
         name="verifier"
         duration="0" />
 
     <artifact
-        location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
-        type="DEX" />
+        location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/outputs/apk/RouteManager-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="39257321962155" >
+    <build timestamp="42130740713385" >
         <artifact
             location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/outputs/apk/RouteManager-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="39511892154612" >
-        <artifact
-            location="/home/durgesh/StudioProjects/RouteManager/RouteManager/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>

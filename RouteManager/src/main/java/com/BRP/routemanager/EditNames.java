@@ -14,27 +14,30 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.BRP.routemanager.activites.EditSavedHome;
 import com.BRP.routemanager.activites.RouteManager;
+import com.BRP.routemanager.adapters.StopsListAdapter;
 import com.BRP.routemanager.app.rmApp;
+import com.BRP.routemanager.models.Stop;
 import com.BRP.routemanager.utils.DbHelper;
 
 import java.util.ArrayList;
 
 public class EditNames extends Activity
         implements OnItemSelectedListener {
-    private int itemPos;
 
-    private ArrayList<String> stops;
-    private String routeName, cityName, parent;
+    private ArrayList<Stop> stops;
+    private String routeName, cityName;
     private DbHelper db;
 
-    private TextView currRoute, currSrc, currDest;
-    private EditText routeNew, srcNew, destNew, stopNew;
-    private Spinner stopList;
+    private TextView currRoute;
+    private EditText routeNew;
+    private ListView stopsList;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -44,50 +47,35 @@ public class EditNames extends Activity
         Intent i = getIntent();
         routeName = i.getStringExtra(getString(R.string.routeKey));
         cityName = i.getStringExtra(getString(R.string.cityKey));
-        parent = i.getStringExtra(getString(R.string.parentKey));
+
 
         currRoute = (TextView) findViewById(R.id.currRoute);
-        currSrc = (TextView) findViewById(R.id.currSrc);
-        currDest = (TextView) findViewById(R.id.currDest);
         routeNew = (EditText) findViewById(R.id.routeNew);
-        srcNew = (EditText) findViewById(R.id.srcNew);
-        destNew = (EditText) findViewById(R.id.destNew);
-        stopNew = (EditText) findViewById(R.id.stopNew);
 
         db = new DbHelper(rmApp.getAppContext(), cityName, routeName);
 
-        stops = new ArrayList<String>();
-        stops.add(getString(R.string.stopSel));
+        stops = new ArrayList<Stop>();
 
         Cursor c = db.showTable();
 
         if (c != null && c.getCount() > 0) {
             c.moveToFirst();
             while (!c.isAfterLast()) {
-                stops.add(c.getString(1));
+                Stop stop = new Stop(c.getString(0), c.getString(1), c.getString(2), c.getString(3));
+                stops.add(stop);
                 c.moveToNext();
             }
         }
 
         if (savedInstanceState != null) {
             currRoute.setText(savedInstanceState.getString("currRoute"));
-            currSrc.setText(savedInstanceState.getString("currSrc"));
-            currDest.setText(savedInstanceState.getString("currDest"));
             routeNew.setText(savedInstanceState.getString("routeNew"));
-            srcNew.setText(savedInstanceState.getString("srcNew"));
-            destNew.setText(savedInstanceState.getString("destNew"));
-            stopNew.setText(savedInstanceState.getString("stopNew"));
         } else {
-            currRoute.setText(routeName.substring(6, routeName.indexOf("_From_")).replaceAll("_", " "));
-            currSrc.setText(routeName.substring(routeName.indexOf("_From_") + 6, routeName.indexOf("_Towards_")).replaceAll("_", " "));
-            currDest.setText(routeName.substring(routeName.indexOf("_Towards_") + 9).replaceAll("_", " "));
+            currRoute.setText(routeName.substring(6));
         }
-
-        stopList = (Spinner) findViewById(R.id.stopSelectSpinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, stops);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        stopList.setAdapter(adapter);
-        stopList.setOnItemSelectedListener(this);
+        stopsList = (ListView)findViewById(R.id.stops_list);
+        StopsListAdapter adapter = new StopsListAdapter(this, R.layout.stops_list_item, stops);
+        stopsList.setAdapter(adapter);
     }
 
     @Override
@@ -123,12 +111,12 @@ public class EditNames extends Activity
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString("currRoute", currRoute.getText().toString());
-        outState.putString("currSrc", currSrc.getText().toString());
-        outState.putString("currDest", currDest.getText().toString());
+        /*outState.putString("currSrc", currSrc.getText().toString());
+        outState.putString("currDest", currDest.getText().toString());*/
         outState.putString("routeNew", routeNew.getText().toString());
-        outState.putString("srcNew", srcNew.getText().toString());
+        /*outState.putString("srcNew", srcNew.getText().toString());
         outState.putString("destNew", destNew.getText().toString());
-        outState.putString("stopNew", stopNew.getText().toString());
+        outState.putString("stopNew", stopNew.getText().toString());*/
     }
 
     @Override
@@ -155,7 +143,7 @@ public class EditNames extends Activity
     private boolean checkRoute(char qualifier) {
         String Route;
         if (qualifier == 'r') {
-            Route = "Route_" + routeNew.getText().toString().trim().replaceAll(" ", "_") +
+            Route = "route_" + routeNew.getText().toString().trim().replaceAll(" ", "_") +
                     "_From_" + currSrc.getText().toString().trim().replaceAll(" ", "_") +
                     "_Towards_" + currDest.getText().toString().trim().replaceAll(" ", "_");
         } else if (qualifier == 's') {
